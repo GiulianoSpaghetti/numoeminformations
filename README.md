@@ -1,10 +1,12 @@
 # numoeminformations
 UN modificatore di informazioni OEM in WPF
 
-# Bug Noti
+# Donazioni
 
-Se non si avvia l'eseguibile coi permessi di amministrazione crasha.
-Può sembrare che si impalli mentre scrive le informazioni, ma l'accesso al registro di sistema in WPF è theadizzati.
+[![paypal](https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H4ZHTFRCETWXG)
+
+Puoi donare anche tramite carta Hype a patto di avere il mio numero di cellulare nella rubrica. Sai dove lo puoi trovare? Sul mio curriculum.
+Apri l'app Hype, fai il login, seleziona PAGAMENTI, INVIA DENARO, seleziona il mio numero nella rubrica, imposta l'importo, INSERISCI LA CAUSALE e segui le istruzioni a video.
 
 # Bibliografia
 
