@@ -28,12 +28,13 @@
         <Label Grid.Row="2" Grid.Column="0">SupportHours</Label>
         <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtSupportHours" />
         <Label Grid.Row="3" Grid.Column="0">SupportPhone</Label>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtSuppotPhone" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtSupportPhone" />
         <Label Grid.Row="4" Grid.Column="0">SupportURL</Label>
         <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtSupportUrl" />
         <Button Click="OnSelectImage_Clicked" Grid.Row="5" Grid.Column="0">Seleziona Logo</Button>
         <Image x:Name="imgLogo" Grid.Row="5" Grid.Column="1" />
-        <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">Salva</Button>
+        <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0">Salva</Button>
+        <Button Click="OnCancellaLogo_Clicked" Grid.Row="6" Grid.Column="1">Cancella Logo</Button>
         <Label Grid.Row="7" Grid.Column="0" x:Name="txtRisultato">Giulio Sorrentino © 2023, some Rights Reserved</Label>
         <Label Grid.Row="7" Grid.Column="1">This software is under GPL v3 or in your humble opinion, any later version.</Label>
     </Grid>

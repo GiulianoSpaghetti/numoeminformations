@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
@@ -34,7 +35,11 @@ namespace numoeminformations
                 txtModel.Text = key.GetValue("Model") as string;
                 txtSupportHours.Text = key.GetValue("SupportHours") as string;
                 txtSupportUrl.Text = key.GetValue("SupportURL") as string;
-                txtSuppotPhone.Text = key.GetValue("SupportPhone") as string;
+                txtSupportPhone.Text = key.GetValue("SupportPhone") as string;
+                strlogo = key.GetValue("Logo") as string;
+                if (File.Exists(strlogo))
+                    imgLogo.Source = new BitmapImage(new Uri(strlogo));
+
             }
         }
 
@@ -54,25 +59,39 @@ namespace numoeminformations
 
         private void OnSalva_Click(object sender, RoutedEventArgs e)
         {
-            using (var hklm = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
-            using (var key = hklm.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation", true))
-            {
-                try
-                {
-                    key.SetValue("Manufacturer", txtManufacturer.Text);
-                } catch (System.Security.SecurityException ex)
-                {
-                    txtRisultato.Content = ex.Message;
-                    return;
-                }
-                key.SetValue("Model", txtModel.Text);
-                key.SetValue("SupportHours", txtSupportHours.Text);
-                key.SetValue("SupportURL", txtSupportUrl.Text);
-                key.SetValue("SupportPhone", txtSuppotPhone.Text);
-                key.SetValue("Logo", strlogo);
-                txtRisultato.Content = "Apri le propietà di risorse del computer.";
-            }
+            RegistryKey hklm = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
+            RegistryKey key;
 
+            try
+            {
+                key=hklm.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation", true);
+                if (txtManufacturer.Text != null)
+                    key.SetValue("Manufacturer", txtManufacturer.Text);
+                if (txtModel.Text != null)
+                    key.SetValue("Model", txtModel.Text);
+                if (txtSupportHours.Text != null)
+                    key.SetValue("SupportHours", txtSupportHours.Text);
+                if (txtSupportUrl.Text != null)
+                    key.SetValue("SupportURL", txtSupportUrl.Text);
+                if (txtSupportPhone.Text != null)
+                    key.SetValue("SupportPhone", txtSupportPhone.Text);
+                if (strlogo != null)
+                    key.SetValue("Logo", strlogo);
+            }
+            catch (Exception ex)
+            {
+                txtRisultato.Content = ex.Message;
+                txtRisultato.Foreground=Brushes.Red;
+                return;
+            }
+            txtRisultato.Content = "Apri le propietà di risorse del computer.";
+            txtRisultato.Foreground = Brushes.Green;
+        }
+
+        private void OnCancellaLogo_Clicked(object sender, RoutedEventArgs e)
+        {
+            strlogo = "";
+            imgLogo.Source=new BitmapImage();
         }
     }
 }
