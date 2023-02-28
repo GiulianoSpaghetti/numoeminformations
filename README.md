@@ -14,6 +14,7 @@ https://www.godo.dev/tutorials/wpf-load-external-image/
 
 https://stackoverflow.com/questions/13728491/opensubkey-returns-null-for-a-registry-key-that-i-can-see-in-regedit-exe
 
+https://stackoverflow.com/questions/17406751/wpf-application-manifest-file
 
 
 
