@@ -19,6 +19,7 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Grid.Column="0">Manufacturer</Label>
         <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtManufacturer" />
@@ -33,5 +34,6 @@
         <Button Click="OnSelectImage_Clicked" Grid.Row="5" Grid.Column="0">Seleziona Logo</Button>
         <Image x:Name="imgLogo" Grid.Row="5" Grid.Column="1" />
         <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0">Salva</Button>
+        <Label Grid.Row="7" Grid.Column="0">Giulio Sorrentino © 2023, some Righ Reserved</Label>
     </Grid>
 </Window>
