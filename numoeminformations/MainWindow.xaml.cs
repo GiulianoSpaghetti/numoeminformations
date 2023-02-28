@@ -84,7 +84,7 @@ namespace numoeminformations
                 txtRisultato.Foreground=Brushes.Red;
                 return;
             }
-            txtRisultato.Content = "Apri le propietà di risorse del computer.";
+            txtRisultato.Content = "Open My Computer Properties";
             txtRisultato.Foreground = Brushes.Green;
         }
 
