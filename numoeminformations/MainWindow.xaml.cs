@@ -62,7 +62,7 @@ namespace numoeminformations
                     key.SetValue("Manufacturer", txtManufacturer.Text);
                 } catch (System.Security.SecurityException ex)
                 {
-                    MessageBox.Show(ex.Message, "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
+                    txtRisultato.Content = ex.Message;
                     return;
                 }
                 key.SetValue("Model", txtModel.Text);
@@ -70,6 +70,7 @@ namespace numoeminformations
                 key.SetValue("SupportURL", txtSupportUrl.Text);
                 key.SetValue("SupportPhone", txtSuppotPhone.Text);
                 key.SetValue("Logo", strlogo);
+                txtRisultato.Content = "Apri le propietà di risorse del computer.";
             }
 
         }

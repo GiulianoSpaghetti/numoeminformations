@@ -33,7 +33,8 @@
         <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtSupportUrl" />
         <Button Click="OnSelectImage_Clicked" Grid.Row="5" Grid.Column="0">Seleziona Logo</Button>
         <Image x:Name="imgLogo" Grid.Row="5" Grid.Column="1" />
-        <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0">Salva</Button>
-        <Label Grid.Row="7" Grid.Column="0">Giulio Sorrentino © 2023, some Rights Reserved</Label>
+        <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">Salva</Button>
+        <Label Grid.Row="7" Grid.Column="0" x:Name="txtRisultato">Giulio Sorrentino © 2023, some Rights Reserved</Label>
+        <Label Grid.Row="7" Grid.Column="1">This software is under GPL v3 or in your humble opinion, any later version.</Label>
     </Grid>
 </Window>
