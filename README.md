@@ -1,6 +1,10 @@
 # numoeminformations
 Un modificatore di informazioni OEM in WPF
 
+# Come installare
+
+https://www.youtube.com/watch?v=auXFlDdNdaA&t=4s
+
 # Screenshots
 
 <img width="591" alt="2023-02-28 (1)" src="https://user-images.githubusercontent.com/49764967/221957467-a81a5c07-aa94-4723-9ecd-6358673b4088.png">
