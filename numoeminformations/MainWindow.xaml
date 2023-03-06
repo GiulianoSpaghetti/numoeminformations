@@ -21,21 +21,21 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="0">Manufacturer</Label>
+        <Label Grid.Row="0" Grid.Column="0">Marca</Label>
         <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtManufacturer" />
-        <Label Grid.Row="1" Grid.Column="0">Model</Label>
+        <Label Grid.Row="1" Grid.Column="0">Modello</Label>
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtModel" />
-        <Label Grid.Row="2" Grid.Column="0">SupportHours</Label>
+        <Label Grid.Row="2" Grid.Column="0">Ore in cui telefonare</Label>
         <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtSupportHours" />
-        <Label Grid.Row="3" Grid.Column="0">SupportPhone</Label>
+        <Label Grid.Row="3" Grid.Column="0">Numro di telefono</Label>
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtSupportPhone" />
-        <Label Grid.Row="4" Grid.Column="0">SupportURL</Label>
+        <Label Grid.Row="4" Grid.Column="0">Sito web</Label>
         <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtSupportUrl" />
-        <Button Click="OnSelectImage_Clicked" Grid.Row="5" Grid.Column="0">Select Logo</Button>
+        <Button Click="OnSelectImage_Clicked" Grid.Row="5" Grid.Column="0">Seleziona Logo</Button>
         <Image x:Name="imgLogo" Grid.Row="5" Grid.Column="1" />
-        <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0">Save</Button>
-        <Button Click="OnCancellaLogo_Clicked" Grid.Row="6" Grid.Column="1">Delete Logo</Button>
+        <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0">Salva</Button>
+        <Button Click="OnCancellaLogo_Clicked" Grid.Row="6" Grid.Column="1">Elimina Logo</Button>
         <Label Grid.Row="7" Grid.Column="0" x:Name="txtRisultato">Giulio Sorrentino © 2023, some Rights Reserved</Label>
-        <Label Grid.Row="7" Grid.Column="1">This software is under GPL v3 or in your humble opinion, any later version.</Label>
+        <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">Questo software è sotto GPL v3, o secondo la tua personale opinione opinione, qualsiasi versione successiva.</TextBlock>
     </Grid>
 </Window>
