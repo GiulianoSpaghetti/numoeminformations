@@ -1,10 +1,14 @@
-﻿using Microsoft.Win32;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -80,9 +84,24 @@ namespace numoeminformations
             }
             catch (Exception ex)
             {
-                txtRisultato.Content = ex.Message;
-                txtRisultato.Foreground=Brushes.Red;
-                return;
+                if (IsRunAsAdmin())
+                {
+                    txtRisultato.Content = ex.Message;
+                    txtRisultato.Foreground = Brushes.Red;
+                    return;
+                } else
+                {
+                    try
+                    {
+                        AdminRelauncher();
+                    } catch (Exception exe)
+                    {
+                        txtRisultato.Content = exe.Message;
+                        txtRisultato.Foreground = Brushes.Red;
+                        return;
+
+                    }
+                }
             }
             txtRisultato.Content = "Apri le proprietà di Risorse del Computer";
             txtRisultato.Foreground = Brushes.Green;
@@ -93,5 +112,28 @@ namespace numoeminformations
             strlogo = "";
             imgLogo.Source=new BitmapImage();
         }
+        private void AdminRelauncher()
+        {
+            if (!IsRunAsAdmin())
+            {
+                ProcessStartInfo proc = new ProcessStartInfo();
+                proc.UseShellExecute = true;
+                proc.WorkingDirectory = Environment.CurrentDirectory;
+                proc.FileName = Assembly.GetEntryAssembly().CodeBase.Replace(".dll", ".exe");
+                proc.Verb = "runas";
+                new ToastContentBuilder().AddArgument("Privilegi amministrativi richiesti").AddText("L'app verrà avviata con privilegi amministrativi").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                Process.Start(proc);
+                Application.Current.Shutdown();
+            }
+        }
+
+        private bool IsRunAsAdmin()
+        {
+            WindowsIdentity id = WindowsIdentity.GetCurrent();
+            WindowsPrincipal principal = new WindowsPrincipal(id);
+
+            return principal.IsInRole(WindowsBuiltInRole.Administrator);
+        }
+
     }
 }
