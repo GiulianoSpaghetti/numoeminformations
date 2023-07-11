@@ -3,6 +3,10 @@ Un modificatore di informazioni OEM in WPF
 
 # Come installare
 
+winget install GiulioSorrentino.mnumeronesoeminformations
+
+oppure, per le versioni localizzate in italiano
+
 https://www.youtube.com/watch?v=auXFlDdNdaA&t=4s
 
 # Screenshots
