@@ -1,6 +1,10 @@
 # numoeminformations
 Un modificatore di informazioni OEM in WPF
 
+# Video di presentazione
+
+https://www.youtube.com/watch?v=sf9TwDaC0Mk&t=424s
+
 # Come installare
 
 winget install GiulioSorrentino.numeronesoeminformations
