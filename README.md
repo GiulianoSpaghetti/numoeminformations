@@ -37,7 +37,3 @@ https://stackoverflow.com/questions/13728491/opensubkey-returns-null-for-a-regis
 
 https://stackoverflow.com/questions/17406751/wpf-application-manifest-file
 
-# Il prodotto è stato rifiutato dal windows store
-
-<img width="941" alt="2023-03-06 (1)" src="https://user-images.githubusercontent.com/49764967/223132701-80a2a153-3ae9-4285-99d2-7a4683a6501c.png">
-
