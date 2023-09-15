@@ -118,7 +118,7 @@ namespace numoeminformations
                     }
                 }
             }
-            txtRisultato.Content = "Apri le proprietà di Risorse del Computer";
+            txtRisultato.Content = "Open System Informations under Settings";
             txtRisultato.Foreground = Brushes.Green;
             Pulisci(hklm, key);
 
@@ -144,7 +144,7 @@ namespace numoeminformations
                 proc.WorkingDirectory = Environment.CurrentDirectory;
                 proc.FileName = Assembly.GetEntryAssembly().CodeBase.Replace(".dll", ".exe");
                 proc.Verb = "runas";
-                new ToastContentBuilder().AddArgument("Privilegi amministrativi richiesti").AddText("L'app verrà avviata con privilegi amministrativi").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                new ToastContentBuilder().AddArgument("Required admin launch").AddText("This app will be relaunched with administrative priviledges").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
                 Process.Start(proc);
                 Application.Current.Shutdown();
             }

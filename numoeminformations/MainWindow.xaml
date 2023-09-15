@@ -21,21 +21,21 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="0">Marca</Label>
+        <Label Grid.Row="0" Grid.Column="0">Manufacturer</Label>
         <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtManufacturer" />
-        <Label Grid.Row="1" Grid.Column="0">Modello</Label>
+        <Label Grid.Row="1" Grid.Column="0">Model</Label>
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtModel" />
-        <Label Grid.Row="2" Grid.Column="0">Ore in cui telefonare</Label>
+        <Label Grid.Row="2" Grid.Column="0">Support Hours</Label>
         <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtSupportHours" />
-        <Label Grid.Row="3" Grid.Column="0">Numro di telefono</Label>
+        <Label Grid.Row="3" Grid.Column="0">Support Phone</Label>
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtSupportPhone" />
-        <Label Grid.Row="4" Grid.Column="0">Sito web</Label>
+        <Label Grid.Row="4" Grid.Column="0">Web Site</Label>
         <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtSupportUrl" />
-        <Button Click="OnSelectImage_Clicked" Grid.Row="5" Grid.Column="0">Seleziona Logo</Button>
+        <Button Click="OnSelectImage_Clicked" Grid.Row="5" Grid.Column="0">Select Logo</Button>
         <Image x:Name="imgLogo" Grid.Row="5" Grid.Column="1" />
-        <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0">Salva</Button>
-        <Button Click="OnCancellaLogo_Clicked" Grid.Row="6" Grid.Column="1">Elimina Logo</Button>
+        <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0">Save</Button>
+        <Button Click="OnCancellaLogo_Clicked" Grid.Row="6" Grid.Column="1">Delete Logo</Button>
         <Label Grid.Row="7" Grid.Column="0" x:Name="txtRisultato">Giulio Sorrentino © 2023, some Rights Reserved</Label>
-        <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">Questo software è sotto GPL v3, o secondo la tua personale opinione opinione, qualsiasi versione successiva.</TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">This software is relesead according to GPL v3, or in your humble opinion, any later version.</TextBlock>
     </Grid>
 </Window>
