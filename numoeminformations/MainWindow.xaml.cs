@@ -64,23 +64,36 @@ namespace numoeminformations
         private void OnSalva_Click(object sender, RoutedEventArgs e)
         {
             RegistryKey hklm = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
-            RegistryKey key;
+            RegistryKey key=null;
 
             try
             {
                 key=hklm.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation", true);
                 if (txtManufacturer.Text != null)
                     key.SetValue("Manufacturer", txtManufacturer.Text);
+                else
+                    key.DeleteValue("Manufacturer", false);
                 if (txtModel.Text != null)
                     key.SetValue("Model", txtModel.Text);
+                else
+                    key.DeleteValue("Model", false);
                 if (txtSupportHours.Text != null)
                     key.SetValue("SupportHours", txtSupportHours.Text);
+                else
+                    key.DeleteValue("SupportHours", false);
                 if (txtSupportUrl.Text != null)
                     key.SetValue("SupportURL", txtSupportUrl.Text);
+                else
+                    key.DeleteValue("SupportUrl", false);
                 if (txtSupportPhone.Text != null)
                     key.SetValue("SupportPhone", txtSupportPhone.Text);
+                else
+                    key.DeleteValue("SupportPhone", false);
                 if (strlogo != null)
                     key.SetValue("Logo", strlogo);
+                else
+                    key.DeleteValue("Logo", false);
+
             }
             catch (Exception ex)
             {
@@ -88,6 +101,7 @@ namespace numoeminformations
                 {
                     txtRisultato.Content = ex.Message;
                     txtRisultato.Foreground = Brushes.Red;
+                    Pulisci(hklm, key);
                     return;
                 } else
                 {
@@ -98,6 +112,7 @@ namespace numoeminformations
                     {
                         txtRisultato.Content = exe.Message;
                         txtRisultato.Foreground = Brushes.Red;
+                        Pulisci(hklm, key);
                         return;
 
                     }
@@ -105,8 +120,16 @@ namespace numoeminformations
             }
             txtRisultato.Content = "Apri le proprietà di Risorse del Computer";
             txtRisultato.Foreground = Brushes.Green;
-        }
+            Pulisci(hklm, key);
 
+        }
+        private void Pulisci(RegistryKey hklm, RegistryKey key)
+        {
+            if (key != null)
+                key.Close();
+            hklm.Close();
+
+        }
         private void OnCancellaLogo_Clicked(object sender, RoutedEventArgs e)
         {
             strlogo = "";
