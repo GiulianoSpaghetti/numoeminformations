@@ -11,10 +11,6 @@ https://www.youtube.com/watch?v=sf9TwDaC0Mk&t=424s
 
 [![winget](https://user-images.githubusercontent.com/49786146/159123313-3bdafdd3-5130-4b0d-9003-40618390943a.png)](https://marticliment.com/wingetui/share?pid=GiulioSorrentino.numeronesoeminformations&pname=numerone's%20oem%20information&psource=Winget:%20winget)
 
-oppure, per le versioni localizzate in italiano
-
-https://www.youtube.com/watch?v=auXFlDdNdaA&t=4s
-
 # Screenshots
 
 <img width="591" alt="2023-02-28 (1)" src="https://user-images.githubusercontent.com/49764967/221957467-a81a5c07-aa94-4723-9ecd-6358673b4088.png">
