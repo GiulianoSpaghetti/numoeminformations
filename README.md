@@ -7,7 +7,9 @@ https://www.youtube.com/watch?v=sf9TwDaC0Mk&t=424s
 
 # Come installare
 
-winget install GiulioSorrentino.numeronesoeminformations
+# Su Windows
+
+[![winget](https://user-images.githubusercontent.com/49786146/159123313-3bdafdd3-5130-4b0d-9003-40618390943a.png)](https://marticliment.com/wingetui/share?pid=GiulioSorrentino.numeronesoeminformations&pname=numerone's%20oem%20information&psource=Winget:%20winget)
 
 oppure, per le versioni localizzate in italiano
 
