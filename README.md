@@ -18,7 +18,7 @@ https://www.youtube.com/watch?v=sf9TwDaC0Mk&t=424s
 <img width="1050" alt="2023-02-28 (3)" src="https://user-images.githubusercontent.com/49764967/221957477-54fdfb19-7f63-465e-96c9-2ccb958cd6a7.png">
 
 
-# Donazioni
+# Donazione
 
 [![paypal](https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JZVR4QQFGLR6Q)
 
