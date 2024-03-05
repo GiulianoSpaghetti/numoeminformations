@@ -3,7 +3,7 @@ Un modificatore di informazioni OEM in WPF
 
 # Video di presentazione
 
-https://www.youtube.com/watch?v=sf9TwDaC0Mk&t=424s
+https://1drv.ms/u/s!ApmOB0x2yBN0kohofpRNynPyPpwHQQ?e=MYDE61
 
 # Come installare
 
