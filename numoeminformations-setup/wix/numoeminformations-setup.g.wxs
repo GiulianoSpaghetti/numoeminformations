@@ -6,7 +6,7 @@
     To suppress generation of this file remove `set ide=true` from the PostBuildEvent of the VS project
 </auto-generated>
 -->
-  <Package Compressed="yes" ProductCode="6cf4e806-2b0c-4846-89a5-848c990a4c26" Name="numoeminformations" Language="1033" Version="0.8.9" UpgradeCode="6cf4e806-2b0c-4846-89a5-848c998aac26" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
+  <Package Compressed="yes" ProductCode="6cf4e806-2b0c-4846-89a5-848ca99acc26" Name="numoeminformations" Language="1033" Version="1.1.1" UpgradeCode="6cf4e806-2b0c-4846-89a5-848c998aac26" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
     <SummaryInformation Codepage="Windows-1252" Description="Un modificatore di informazioni OEM per windows 10 e 11." />
     <Media Id="1" Cabinet="numoeminformations.cab" EmbedCab="yes" />
 
@@ -50,8 +50,8 @@
 
     <StandardDirectory Id="ProgramMenuFolder">
 
-      <Component Id="Component.numoeminformations__" Guid="6cf4e806-2b0c-4846-89a5-848cc5090d57" Bitness="always64">
-        <Shortcut Id="ProgramMenuFolder.numoeminformations__" WorkingDirectory="INSTALLDIR" Target="[ProgramFiles64Folder]\numoeminformations\numoeminformations.exe" Name="numoeminformations.lnk" />
+      <Component Id="Component.numerone27s20oem20informations_" Guid="6cf4e806-2b0c-4846-89a5-848ce3334ecb" Bitness="always64">
+        <Shortcut Id="ProgramMenuFolder.numerone27s20oem20informations_" WorkingDirectory="INSTALLDIR" Target="[ProgramFiles64Folder]\numoeminformations\numoeminformations.exe" Name="numerone's oem informations.lnk" />
 
         <CreateFolder />
 
@@ -78,7 +78,7 @@
       <ComponentRef Id="Component.numoeminformations.exe_2611142500" />
       <ComponentRef Id="Component.numoeminformations.runtimeconfig.json_1719439347" />
       <ComponentRef Id="Component.WinRT.Runtime.dll_2241832200" />
-      <ComponentRef Id="Component.numoeminformations__" />
+      <ComponentRef Id="Component.numerone27s20oem20informations_" />
     </Feature>
   </Package>
 </Wix>

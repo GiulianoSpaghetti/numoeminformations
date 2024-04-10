@@ -35,7 +35,7 @@
         <Image x:Name="imgLogo" Grid.Row="5" Grid.Column="1" />
         <Button Click="OnSalva_Click" Grid.Row="6" Grid.Column="0">Save</Button>
         <Button Click="OnCancellaLogo_Clicked" Grid.Row="6" Grid.Column="1">Delete Logo</Button>
-        <Label Grid.Row="7" Grid.Column="0" x:Name="txtRisultato">Giulio Sorrentino © 2023, some Rights Reserved</Label>
+        <Label Grid.Row="7" Grid.Column="0" x:Name="txtRisultato">Giulio Sorrentino © 2023-2024, some Rights Reserved</Label>
         <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">This software is relesead according to GPL v3, or in your humble opinion, any later version.</TextBlock>
     </Grid>
 </Window>
