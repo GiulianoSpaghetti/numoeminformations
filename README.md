@@ -21,14 +21,3 @@ https://1drv.ms/u/s!ApmOB0x2yBN0kohofpRNynPyPpwHQQ?e=MYDE61
 # Donazione
 
 http://numerone.altervista.org/donazioni.php
-
-# Bibliografia
-
-https://www.thewindowsclub.com/add-change-oem-information-windows
-
-https://www.godo.dev/tutorials/wpf-load-external-image/
-
-https://stackoverflow.com/questions/13728491/opensubkey-returns-null-for-a-registry-key-that-i-can-see-in-regedit-exe
-
-https://stackoverflow.com/questions/17406751/wpf-application-manifest-file
-
