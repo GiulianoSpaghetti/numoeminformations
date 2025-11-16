@@ -9,7 +9,7 @@ https://1drv.ms/u/s!ApmOB0x2yBN0kohofpRNynPyPpwHQQ?e=MYDE61
 
 # Su Windows
 
-[![winget](https://user-images.githubusercontent.com/49786146/159123313-3bdafdd3-5130-4b0d-9003-40618390943a.png)](https://marticliment.com/wingetui/share?pid=GiulioSorrentino.numeronesoeminformations&pname=numerone's%20oem%20information&psource=Winget:%20winget)
+[![pling](http://numeronesoft.ddns.net:8080/images/pling.png)](https://www.pling.com/p/2329367)
 
 # Screenshots
 
