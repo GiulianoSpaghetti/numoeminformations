@@ -7,9 +7,14 @@ https://www.youtube.com/watch?v=ZzIHeFT-QPs
 
 # Come installare
 
-# Su Windows
+## Su Windows
 
       unigetui://giuliosorrentino&#46umeronesoeminformations
+## Prerequisti
+
+    unigetui://DesktopRuntime
+    
+installare il windows desktopruntime, essendo in IL suggerisco l'ultima versione (la 10)
       
 # Screenshots
 
