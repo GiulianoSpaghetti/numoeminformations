@@ -9,8 +9,8 @@ https://www.youtube.com/watch?v=ZzIHeFT-QPs
 
 # Su Windows
 
-[![pling](http://numeronesoft.ddns.net:8080/images/pling.png)](https://www.pling.com/p/2329367)
-
+      unigetui://giuliosorrentino&#46umeronesoeminformations
+      
 # Screenshots
 
 <img width="591" alt="2023-02-28 (1)" src="https://user-images.githubusercontent.com/49764967/221957467-a81a5c07-aa94-4723-9ecd-6358673b4088.png">
